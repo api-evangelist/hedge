@@ -1,8 +1,29 @@
 aid: hedge
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hedge.png
 name: Hedge
-description: 'Hedge is a company surfaced as a portfolio company of pantera-capital, y-combinator and
-  added to the API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  Hedge is a decentralized, non-custodial lending protocol built on the Solana
+  blockchain that lets users mint USH, a stablecoin soft-pegged to the US
+  dollar. Users deposit collateral into vaults to take out 0% interest loans for
+  a one-time fee, maintaining a collateral-to-debt ratio above 110% to avoid
+  liquidation. A stability pool absorbs liquidations and rewards depositors with
+  discounted collateral, while a Peg Stability Module and a multi-source oracle
+  (Pyth Network primary, Switchboard fallback) keep USH near its peg. Hedge is
+  an on-chain protocol rather than a hosted REST API; its documentation,
+  whitepaper, and audited Solana program are its public surface. Backed by
+  Pantera Capital and Y Combinator; smart contracts audited by Kudelski,
+  OtterSec, and Sec3.
 url: https://raw.githubusercontent.com/api-evangelist/hedge/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,21 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-onchain:
+  chain: solana
+  program_address: HedgeEohwU6RqokrvPU4Hb6XKPub8NuKbnPmY7FoMMtN
+  explorer: https://explorer.solana.com/address/HedgeEohwU6RqokrvPU4Hb6XKPub8NuKbnPmY7FoMMtN?cluster=mainnet-beta
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Crypto
+- DeFi
+- Solana
+- Stablecoin
+- Lending
+- Blockchain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +56,14 @@ maintainers:
 common:
 - type: Website
   url: https://www.hedge.so/
+- type: Documentation
+  url: https://docs.hedge.so/
+- type: LLMsTxt
+  url: llms/hedge-llms.txt
+- type: DomainSecurity
+  url: security/hedge-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
