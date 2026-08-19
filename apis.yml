@@ -36,7 +36,7 @@ x-onchain:
   chain: solana
   program_address: HedgeEohwU6RqokrvPU4Hb6XKPub8NuKbnPmY7FoMMtN
   explorer: https://explorer.solana.com/address/HedgeEohwU6RqokrvPU4Hb6XKPub8NuKbnPmY7FoMMtN?cluster=mainnet-beta
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
